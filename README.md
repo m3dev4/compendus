@@ -13,10 +13,10 @@ Cette idée est utile pour :
 
 ## Modèle utilisé
 
-Le projet utilise le modèle suivant :
-- facebook/bart-large-cnn
+Le projet utilise maintenant le modèle suivant :
+- csebuetnlp/mT5_multilingual_XLSum
 
-Ce modèle a été choisi parce qu’il est simple à utiliser, efficace pour résumer du texte et adapté à un premier projet local.
+Ce modèle a été choisi parce qu’il est conçu pour travailler sur plusieurs langues et qu’il est adapté à un projet de résumé de texte multilingue.
 
 ## Prérequis
 
@@ -103,6 +103,7 @@ Exemple de corps JSON :
 
 - Si le téléchargement du modèle prend du temps, attendez simplement.
 - Si vous voyez une erreur liée à un jeton, vérifiez votre fichier .env.
+- Si le modèle met du temps à se charger, attendez simplement la fin du téléchargement.
 - Si l’API ne répond pas, vérifiez que le serveur est bien lancé et que le port 8000 est libre.
 
 ## Résumé rapide

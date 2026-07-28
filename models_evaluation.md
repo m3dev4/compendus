@@ -2,27 +2,27 @@
 
 Ce projet utilise un modèle de résumé de texte. Deux options ont été étudiées avant de choisir le modèle final.
 
-## Modèle 1 : facebook/bart-large-cnn
+## Modèle 1 : csebuetnlp/mT5_multilingual_XLSum
+- Nom sur le Hub : csebuetnlp/mT5_multilingual_XLSum
+- Lien : https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum
+- Taille : variable selon la configuration et l’environnement, généralement plus lourde qu’un petit modèle de démonstration
+- Licence : consultez la page du modèle sur Hugging Face pour vérifier la licence exacte
+- Pourquoi ce modèle a été retenu :
+  - adapté au résumé de texte dans plusieurs langues
+  - intéressant pour un projet plus généraliste et multilingue
+  - correspond à l’orientation actuelle du projet
+
+## Modèle 2 : facebook/bart-large-cnn
 - Nom sur le Hub : facebook/bart-large-cnn
 - Lien : https://huggingface.co/facebook/bart-large-cnn
 - Taille : environ 1,6 Go
 - Licence : Apache 2.0
-- Pourquoi ce modèle a été retenu :
-  - très connu et largement utilisé pour les tâches de résumé de texte
-  - bon compromis entre qualité de résumé et simplicité d’utilisation
-  - adapté à un projet de démonstration et de test local
-
-## Modèle 2 : google/pegasus-xsum
-- Nom sur le Hub : google/pegasus-xsum
-- Lien : https://huggingface.co/google/pegasus-xsum
-- Taille : environ 2,4 Go
-- Licence : Apache 2.0
 - Pourquoi il a été écarté :
-  - plus lourd à charger
-  - moins pratique pour un démarrage rapide sur un environnement local
-  - la qualité est intéressante, mais le modèle BART est plus simple à intégrer ici
+  - plus centré sur l’anglais et moins adapté à un usage multilingue
+  - moins conforme à l’objectif actuel du projet
+  - le modèle mT5 répond mieux à la logique de résumé multi-langue
 
 ## Choix final
-Le modèle retenu est facebook/bart-large-cnn.
+Le modèle retenu est csebuetnlp/mT5_multilingual_XLSum.
 
-Il a été choisi parce qu’il est plus simple à utiliser, plus accessible pour les débutants et suffisant pour la fonctionnalité principale du projet : résumer un texte de manière claire et rapide.
+Il a été choisi parce qu’il correspond mieux à l’objectif du projet : proposer un résumé de texte de manière plus polyvalente, y compris pour plusieurs langues.
