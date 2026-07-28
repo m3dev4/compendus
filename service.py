@@ -17,7 +17,7 @@ def summarize(text: str):
     tokens = tokenizer.encode(text)
     if len(tokens) <= MAX_INPUT_TOKEN:
 
-        result = summarizer(text, max_length=15, min_length=14, do_sample=False)
+        result = summarizer(text, max_length=140, min_length=20, do_sample=False)
 
         return result[0]["summary_text"]
 
