@@ -6,7 +6,9 @@ Ce projet utilise un modèle de résumé de texte. Deux options ont été étudi
 - Nom sur le Hub : csebuetnlp/mT5_multilingual_XLSum
 - Lien : https://huggingface.co/csebuetnlp/mT5_multilingual_XLSum
 - Taille : variable selon la configuration et l’environnement, généralement plus lourde qu’un petit modèle de démonstration
-- Licence : consultez la page du modèle sur Hugging Face pour vérifier la licence exacte
+- Licence : CC-BY-NC-SA-4.0, Licence non commercial
+- Fenêtre de contexte: 1024 tokens
+- Paramêtre: Environs 580 millions
 - Pourquoi ce modèle a été retenu :
   - adapté au résumé de texte dans plusieurs langues
   - intéressant pour un projet plus généraliste et multilingue
@@ -17,6 +19,8 @@ Ce projet utilise un modèle de résumé de texte. Deux options ont été étudi
 - Lien : https://huggingface.co/facebook/bart-large-cnn
 - Taille : environ 1,6 Go
 - Licence : Apache 2.0
+- Fenêtre de contexte: 1024 tokens
+- Parametre: environ 406 millions
 - Pourquoi il a été écarté :
   - plus centré sur l’anglais et moins adapté à un usage multilingue
   - moins conforme à l’objectif actuel du projet
